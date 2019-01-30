@@ -1,6 +1,4 @@
- Our Lady of Lebanon Maronite Cathedral - Brooklyn, N.Y. 
-
-var addthis\_config = {"data\_track\_clickback":true};
+*Our Lady of Lebanon Maronite Cathedral - Brooklyn, N.Y.*
 
 [Share](http://www.addthis.com/bookmark.php?v=250&username=ololc) |
 

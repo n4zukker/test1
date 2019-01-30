@@ -1,0 +1,949 @@
+/* CSS Document */
+
+/***********************************************************************************************
+ Setup
+***********************************************************************************************/
+
+html, body, ul, li, img, h1, h2, h3, h4, h5, p, th, td, table, tr {
+margin: 0;
+padding: 0;
+border: 0;
+outline-color: -moz-use-text-color;
+outline-style: none;
+outline-width: 0pt;
+}
+
+/***********************************************************************************************
+ Reference Colours
+***********************************************************************************************/
+
+/*
+*/
+
+/***********************************************************************************************
+ Structure & Layout
+***********************************************************************************************/
+
+body {
+background-color: #FFF;
+background-image:url(../images/structure/mosaicbg.jpg);
+background-repeat:repeat;
+}
+
+#wrapper {
+margin: 0 auto;
+padding: 0 35px;
+width: 930px;
+background-image: url(../images/structure/wrapper_bg.png); /* IE6 Here */
+background-repeat:repeat-y;
+}
+
+#content_wrapper {
+width: 930px;
+padding: 30px 0 50px;
+background-image:url(../images/structure/line_bg.jpg);
+background-position:top left;
+background-repeat: no-repeat;
+}
+
+#footer {
+margin: 0 auto;
+background-image: url(../images/structure/footer.png);
+background-repeat:no-repeat;
+height: 220px;
+width: 1000px;
+}
+
+#content {
+width: 620px; /*padded to 695px*/
+border: 1px solid #E8CA9F;
+padding: 30px 35px 40px 40px;
+margin-left: 230px;
+}
+
+#content_wide {
+border: 1px solid #E8CA9F;
+padding: 30px 35px 40px 40px;
+}
+
+#right_col {
+float:right;
+width: 280px; /*padded to 320px*/
+border: 1px solid #E8CA9F;
+padding: 20px;
+margin-left: 30px;
+margin-bottom: 20px;
+}
+
+#right_col_thin {
+float:right;
+width: 185px;
+border: 1px solid #E8CA9F;
+padding: 20px;
+margin-left: 30px;
+margin-bottom: 20px;
+}
+
+#top_nav {
+background-image:url(../images/structure/nav_bg_lighter.jpg);
+background-repeat:repeat-x;
+min-height: 35px;
+background-color: #5B4328;
+
+}
+
+#sub_nav {
+width: 200px;
+border: 1px solid #B96C2A;
+float: left;
+padding-bottom: 10px;
+background-color:#FFFFFF;
+}
+
+/***********************************************************************************************
+ General Styles
+***********************************************************************************************/
+
+.box_header {
+background-color: #E8CA9F;
+background-image:url(../images/structure/box_header_bg.jpg);
+background-position:left;
+background-repeat:repeat-y;
+height: 33px;
+border-bottom: 1px solid #B96C2A;
+line-height: 3.3em;
+padding-left: 16px;
+margin-bottom: 10px;
+}
+
+/***********************************************************************************************
+ Top Nav
+***********************************************************************************************/
+
+#top_nav {
+line-height: 33px;
+font-weight: bold;
+}
+
+#top_nav ul {
+list-style: none;
+float: left;
+/*font-size: 1.3em;*/
+font-size: 13px; /*fixed to spop menu overrun! */
+margin-right: 10px;
+clear: both;
+}
+
+#top_nav ul li {
+display: inline;
+}
+
+#top_nav ul li a {
+text-decoration: none;
+color: #FFFFFF;
+padding: 9px 14px;
+cursor: pointer;
+background-image:url(../images/structure/nav_div.jpg);
+background-position: right;
+background-repeat:no-repeat;
+}
+
+#top_nav ul li a:hover {
+background-image: url(../images/structure/nav_over.jpg);
+background-position: right;
+}
+
+#top_nav ul li a:active {
+background-image: url(../images/structure/nav_active.jpg);
+background-position: right;
+}
+
+/*#top_nav ul li a .nav_active{*/
+
+#top_nav ul li.nav_active a{
+text-decoration: none;
+color: #B58A5B;
+padding: 9px 14px;
+background-image:url(../images/structure/nav_div.jpg);
+background-position: right;
+background-repeat:no-repeat;
+}
+
+#top_nav ul li.nav_active a:hover, li.nav_active a:active{
+text-decoration: none;
+color: #B58A5B;
+padding: 9px 14px;
+background-image:url(../images/structure/nav_div.jpg);
+background-position: right;
+background-repeat:no-repeat;
+}
+
+
+/***********************************************************************************************
+ Sub Nav
+***********************************************************************************************/
+
+#sub_nav ul{
+list-style-type:none;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+#sub_nav li{
+color: #E8CA9F;
+color: #000;
+}
+
+#sub_nav ul li ul li{
+background-color: #FFF;
+}
+
+
+#sub_nav ul li a {
+color: #694D2F;
+display: block;
+background-color: transparent;
+/*IE fix - make cols clickable*/
+height: 1%;
+text-decoration: none;
+}
+
+/* Spacing */
+#sub_nav ul li a {
+padding: 10px 20px;
+}
+
+#sub_nav .sub_active {
+padding: 10px 20px;
+}
+
+#sub_nav ul li a:hover{
+color: #000;
+text-decoration: underline;
+}
+
+#sub_nav li a:active{
+color: #E8CA9F;
+}
+
+#sub_nav li a:visited{
+color: #B58A5B;
+}
+
+/*Sub Sub*/
+#sub_nav ul li ul {
+padding-left:20px;
+}
+
+#sub_nav .sub_active ul  {
+margin-left:-19px;
+margin-top: 8px;
+}
+
+/*Inactive sub - used to show / hide subsub */
+.inactive_sub {
+display: none;
+}
+
+
+
+/***********************************************************************************************
+ Search
+***********************************************************************************************/
+
+#search .search_input {
+padding: 1px 3px;
+border: 2px solid #6B4F30;
+width: 80px;
+vertical-align:top;
+margin-top: 6px;
+}
+
+.search_form {
+height: 15px;
+padding: 0;
+margin: 0;
+}
+
+/***********************************************************************************************
+ Front Pages
+***********************************************************************************************/
+
+#right_col_front {
+float:right;
+width: 285px; /*padded to 285px*/
+padding: 0;
+margin: 30px 0 50px 30px;
+}
+
+#left_col_front {
+width: 550px; /*padded to 615px*/
+border: 1px solid #E8CA9F;
+padding: 30px;
+margin: 30px 0 0;
+}
+
+#front_shop {
+border: 1px solid #B96C2A;
+}
+
+#actions {
+border: 1px solid #B96C2A;
+margin-bottom: 30px;
+background-image:url(../images/structure/actions_bg.jpg);
+background-repeat:repeat;
+}
+
+#actions_header {
+background-color: #6B4F30;
+background-image:url(../images/structure/box_header_invert.jpg);
+background-position:right;
+background-repeat:repeat-y;
+height: 33px;
+border-bottom: 1px solid #B96C2A;
+line-height: 3.3em;
+padding-left: 16px;
+text-align: left;
+}
+
+#actions_header h2 {
+color: #FFFFFF;
+font-size: 1.8em;
+}
+
+#actions table {
+font-size: 1.4em;
+font-weight: bold;
+}
+
+#actions a {
+color: #6B4F30;
+}
+
+#actions a:hover {
+color: #FFF;
+}
+
+#newsletter {
+margin-bottom: 15px;
+}
+
+#newsletter h3 {
+margin-bottom: 1.2em;
+padding-top: 0.5em;
+}
+
+#newsletter_more {
+display: none;
+}
+
+#newsletter_profile_img {
+float: left;
+margin: 0 20px 10px 0;
+border: 1px solid #E8CA9F;
+width: 125px;
+}
+
+#newsletter_author {
+font-style:italic;
+color: #33261D;
+}
+
+#front_events {
+border: 1px solid #B96C2A;
+width: 260px;
+float: right;
+}
+ 
+#front_news_wrapper {
+margin-bottom: 30px;
+}
+
+#front_news {
+border: 1px solid #B96C2A;
+width: 260px;
+}
+
+#front_news_header {
+background-color: #E8CA9F;
+background-image:url(../images/structure/box_header_bg.jpg);
+background-position:right;
+background-repeat:repeat-y;
+height: 33px;
+border-bottom: 1px solid #B96C2A;
+line-height: 3.3em;
+padding-left: 16px;
+}
+
+.front_news_listing {
+background-color: #F9F1E6;
+padding: 10px 16px;
+border-top: 1px solid #E8CA9F;
+}
+
+.front_news_listing_alt {
+background-color: #FFF;
+padding: 10px 16px;
+border-top: 1px solid #E8CA9F;
+}
+
+.front_news_table th{
+background-color: #E8CA9F;
+background-image:url(../images/structure/box_header_bg.jpg);
+background-position:right;
+background-repeat:repeat-y;
+height: 33px;
+border: 1px solid #B96C2A;
+border-bottom: 1px solid #B96C2A;
+line-height: 3.3em;
+padding-left: 16px;
+text-align: left;
+}
+
+.front_news_table h3 {
+font-size: 1.2em;
+}
+
+.front_news_table td{
+border: 1px solid #B96C2A;
+border-top: none;
+padding: 10px 16px;
+}
+
+.td_alt{
+background-color: #F9F1E6;
+}
+
+.front_news_table .blank {
+border: none;
+}
+
+#front_shop_header {
+background-color: #E8CA9F;
+background-image:url(../images/structure/box_header_long.jpg);
+background-position:right;
+background-repeat:repeat-y;
+height: 33px;
+border-bottom: 1px solid #B96C2A;
+line-height: 3.3em;
+padding-left: 16px;
+}
+
+#front_news_wrapper p {
+margin: 0;
+}
+
+#front_news_wrapper h3 {
+margin-top: 0;
+}
+
+#front_shop_header h2, #front_news_wrapper h2 {
+font-size: 1.8em;
+margin-bottom: 0;
+}
+
+.shop_item {
+padding: 20px;
+}
+
+.shop_item_img {
+float: left;
+margin-right: 25px;
+border: 1px solid #694D2F;
+}
+
+.shop_item_desc {
+margin-left: 20px;
+}
+
+
+/***********************************************************************************************
+ Organ
+***********************************************************************************************/
+
+.organ_table {
+font-size: 1.2em;
+border: 1px solid #E8CA9F;
+padding: 10px;
+background-color:#FFFFFF;
+}
+
+.organ_table td {
+padding: 5px;
+}
+
+.organ_table tr {
+border: 1px solid #E8CA9F;
+}
+
+.organ_table th {
+border: 1px dashed #B96C2A;
+background-color: #E8CA9F;
+color: #FFFFFF;
+padding: 15px;
+}
+
+/***********************************************************************************************
+ Mass Times Box (used on front page)
+***********************************************************************************************/
+
+#mass_times_box {
+background-color: #000;
+background-image:url(../images/structure/mass_header_bg.jpg);
+background-repeat:repeat-y;
+color: #FFF;
+}
+
+#mass_times_box table {
+background-image: url(../images/structure/mass_body_bg.jpg);
+background-repeat: repeat-y;
+width: 100%;
+font-size: 1.2em;
+line-height: 1.6em;
+padding: 10px 0 10px 25px;
+margin: 0;
+}
+
+#mass_times_box th {
+color: #CCC;
+padding-right: 15px;
+text-align: right;
+vertical-align: top;
+}
+
+#mass_times_box h2 {
+font-size: 2.4em;
+padding: 40px 25px 0;
+}
+
+#mass_times_box h3 {
+padding: 0 25px 20px;
+margin-top: 20px;
+}
+
+#mass_times_box a:link, #mass_times_box a:active, #mass_times_box a:visited {
+color: #fff;
+text-decoration: none;
+}
+
+#mass_times_box a:hover {
+text-decoration: underline;
+color: #fff;
+}
+
+/* for masses.php page */
+.massTimes {
+font-size: 1.2em;
+margin-bottom: 2em;
+}
+
+.massTimes th, .massTimes td{
+padding-right: 1em;
+}
+
+
+/***********************************************************************************************
+ Mass Music
+***********************************************************************************************/
+
+.massMusicCalendar td{
+padding: 0px;
+line-height: 0.7em;
+}
+
+.massMusic td{
+font-size: 1.2em
+}
+
+.dateWithAppts {
+background-color: #F5E9D7;
+}
+
+.currentDay {
+background-color: #E8CA9F;
+}
+
+/***********************************************************************************************
+ Sitemap
+***********************************************************************************************/
+
+#sitemap ul{
+list-style-type:none;
+text-transform:uppercase;
+font-weight:bold;
+font-size: 1.3em;
+padding: 2em 0;
+}
+
+#sitemap ul ul{
+font-size: 0.9em;
+list-style-type:disc;
+border-bottom: 1px solid #E8CA9F;
+}
+
+
+#sitemap ul ul ul{
+font-size: 0.9em;
+border-bottom: none;
+}
+
+
+#sitemap li{
+color: #E8CA9F;
+}
+
+#sitemap a {
+color: #694D2F;
+display: block;
+background-color: transparent;
+/*IE fix - make cols clickable*/
+height: 1%;
+}
+
+/* Spacing */
+#sitemap a, #sitemap .sub_active {
+padding: 10px 20px;
+}
+
+#sitemap ul li a:hover{
+color: #000;
+}
+
+#sitemap li a:active{
+color: #E8CA9F;
+}
+
+#sitemap li a:visited{
+color: #B58A5B;
+}
+
+#sitemap ul li ul {
+padding-left:20px;
+}
+
+
+.headli{
+font-weight: normal;
+clear: right;
+background-color: #E8CA9F;
+color: #000;
+font-size: 0.9em;
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#sitemap  .headli a, #sitemap  .headli a:visited  {
+color: #000000;
+}
+
+#sitemap .headli a, #sitemap .headli a:link {
+color: #000000;
+}
+
+
+/***********************************************************************************************
+ Content
+***********************************************************************************************/
+
+.right_box {
+width: 150px;
+border: 1px solid #333333;
+padding: 25px 5px 25px 40px;
+float: right;
+margin-left: 40px;
+margin-bottom: 50px;
+}
+
+.right_box li {
+margin-bottom: 0.8em;
+}
+
+.right_box_front {
+width: 190px;
+border: 1px solid #333333;
+padding: 25px 5px 25px 40px;
+float: right;
+margin-left: 40px;
+margin-bottom: 50px;
+}
+
+.right_box_front li {
+margin-bottom: 0.8em;
+}
+
+#content ul {
+margin-top: 1em;
+margin-bottom: 1.3em;
+margin-left: 1em;
+font-size: 1.2em;
+list-style-position:outside;
+margin-bottom: 1.3em;
+line-height: 150%;
+}
+
+#sub_nav {
+font-size: 1.2em;
+margin-bottom: 2em;
+}
+
+/***********************************************************************************************
+ Text
+***********************************************************************************************/
+
+/* set base font size to equivalent of 10px */
+body {
+font-size: 12px;
+color: #000;
+}
+
+body, input, textarea, #top_nav, h3, h4 {
+font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2  {
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+font-size: 1.2em;
+line-height: 1.6em;
+margin-bottom: 1.3em;
+}
+
+h1 {
+font-size: 40px;
+font-weight: normal;
+margin-bottom: 0.6em;
+}
+
+.h1_link a:link, .h1_link a:visited {
+text-decoration: none;
+color: #000000;
+}
+
+.h1_link a:hover {
+text-decoration: underline;
+}
+
+
+h2 {
+font-size: 1.6em;
+font-weight: normal;
+margin-bottom: 1.0em;
+}
+
+#sub_nav h2 {
+font-size: 1.5em;
+}
+
+.shaded{
+clear: right;
+background-color: #E8CA9F;
+padding: 5px;
+color: #000;
+font-size: 1.4em;
+}
+
+
+h3 {
+font-weight: bold;
+margin-top: 2em;
+font-size: 1.4em;
+margin-bottom: 0.4em;
+}
+
+/* Links */ 
+
+a:link, a:visited {
+color: #694D2F;
+}
+
+a:hover, a:active {
+text-decoration: underline;
+color: #000;
+}
+
+h2 a:link, h2 a:visited {
+color: #000;
+text-decoration: none;
+}
+
+h2 a:hover {
+text-decoration: underline;
+}
+
+
+/***********************************************************************************************
+ Buttons
+***********************************************************************************************/
+
+
+
+/***********************************************************************************************
+ Staff listings
+***********************************************************************************************/
+
+.staff {
+text-align: center;
+width: 125px;
+margin-bottom: 8px;
+}
+
+.staff_img {
+border: 1px solid #E8CA9F;
+width: 125px;
+}
+/***********************************************************************************************
+ News
+***********************************************************************************************/
+
+.news_story {
+margin-bottom: 6em;
+min-height: 100px;
+}
+
+.story_thumb {
+float: right;
+margin: 0 0 6px 10px;
+padding: 4px;
+border: 1px solid #E8CA9F;
+}
+
+/***********************************************************************************************
+ Footer
+***********************************************************************************************/
+
+#footer p{
+color: #FFF;
+text-align: center;
+padding: 20px 100px;
+}
+
+#footer a, #footer a:visited{
+color: #E8CA9F;
+}
+
+#footer a:hover, #footer a:active{
+color: #FFF;
+}
+
+/***********************************************************************************************
+ Accessibility
+***********************************************************************************************/
+
+#low_graphics {
+color: #694D2F;
+font-size: 11px;
+float: right;
+position: absolute;
+padding: 0 0 0 15px;
+z-index: 55;
+}
+
+.resize_small {
+text-decoration: none;
+font-size: 10px;
+margin-right: 1px;
+}
+
+.resize_med {
+text-decoration: none;
+font-size: 12px;
+margin-right: 1px;
+}
+
+.resize_large {
+text-decoration: none;
+font-size: 14px;
+}
+
+.resize_small a, .resize_small a, .resize_small a {
+text-decoration: none;
+color: #000000;
+}
+
+.resize_small a:hover, .resize_small a:hover, .resize_small a:hover {
+text-decoration: underline;
+color: #FFF;
+}
+
+#low_graphics a:link, #low_graphics a:visited {
+/*color: #FFF;*/
+}
+
+#low_graphics a:active, #low_graphics a:hover{
+color: #E8CA9F;
+}
+
+
+/***********************************************************************************************
+ Misc classes
+***********************************************************************************************/
+
+.clearit {
+clear: both;
+}
+
+.clearit_left {
+clear: left;
+}
+
+hr {
+color: #333;
+background-color: #333;
+height: 1px;
+margin: 3em 0;
+}
+
+.wide_img {
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.image_caption {
+width: 100%;
+text-align: center;
+font-size: 1.1em;
+}
+
+#grand_organ {
+margin-left: -40px;
+}
+
+.line_bottom {
+height: 15px;
+border-bottom: 1px solid #E8CA9F;
+margin-bottom: 15px;
+}
+
+.organ_spec {
+width: 33%;
+float: left;
+}
+
+.left_image {
+float:left;
+margin-right: 10px;
+}
+
+.left_image_small {
+float:left;
+margin-right: 10px;
+}
+
+.related_link {
+margin-right: 8px;
+}
+
+.red_text {
+color: #E6593B;
+}
+
+.recordings_table {
+border: 1px solid #DBCEA4;
+padding: 10px;
+background-color:#FFFFFF;
+}
+
+.recordings_table td{
+padding: 10px;
+}
